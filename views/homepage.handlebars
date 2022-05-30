@@ -1,12 +1,14 @@
-<div class="title-box">
-  {{#each posts}}
+{{#each posts}}
+  <div class="title-box">
+
     <div class="title-header">
       <h3>{{title}}</h3>
       <span> <i>posted by {{user.username}} on {{created_at}}</i></span>
-    </div>
 
+    </div>
     <div class="title-body">
       {{post_url}}
     </div>
-   {{/each}}
-</div>
+
+  </div>
+{{/each}}
