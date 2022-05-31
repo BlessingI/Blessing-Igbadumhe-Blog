@@ -1,29 +1,32 @@
 * {
-    box-sizing: border-box;
-  }
-
-body, html {
-    height: 100%;
-    padding: 0;
-    margin: 0;
-    font-family: sans-serif;
-    color: #333;
-    background-color: #8fbc8f;
-  }
-
-header {
-  background-color: #180806;
-  color: #8fbc8f;
+  box-sizing: border-box;
 }
 
-nav li {
-  margin: 20px;
-  font-size: 1.5em;
+body,
+html {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+  color: #333;
+  background-color: #d9ead3;
+}
+
+header {
+  background-color: #231010;
+  color: #d9ead3;
 }
 
 nav li {
   list-style: none;
   display: inline-block;
+  margin: 20px;
+  font-size: 1.5em;
+}
+
+nav li a {
+  text-decoration: none;
+  color: #d9ead3;
 }
 
 .blog-title {
@@ -32,21 +35,28 @@ nav li {
   padding-right: 15px;
   padding-left: 15px;
   border-radius: 12px;
-  box-shadow: 5px 10px gray;
-  background-color: #8fbc8f;
-  color: #180806;
+  box-shadow: 5px 10px #a8a8a8;
+  background-color: #d9ead3;
+  color: #231010;
   display: inline-block;
 }
 
-.title-box {
-  margin-top: 20px;
-  border: 5px solid #180806;
+.blog-title a {
+  text-decoration: none;
+  color: #231010;
+}
+
+.title-box,
+.login-form {
+  margin: 35px;
+  border: 2px solid #231010;
   padding-bottom: 40px;
 }
 
-.title-header {
-  background-color: #180806;
-  color: #8fbc8f;
+.title-header,
+.login-form-header {
+  background-color: #231010;
+  color: #d9ead3;
   padding-left: 1.8rem;
   font-size: 1.4rem;
   display: flex;
@@ -59,10 +69,47 @@ nav li {
   line-height: 01.5em;
 }
 
-footer {
-  border-top: 1px solid #ccc;
-  display: flex;
-  justify-content: center;
-  padding: 1%;
-  font-size: 110%;
+.login-form {
+}
+
+.login-form-header {
+  padding: 0.45em;
+  font-weight: 800;
+  padding-left: 30px;
+}
+
+.login-writting,
+.login-box, .login-sign {
+  margin-left: 30px;
+  margin-bottom: 8px;
+  margin-top: 8px;
+  font-size: 1.5rem;
+}
+
+.login-title{
+  margin-bottom: 10px;
+}
+
+input, .login-box button {
+  width: 96%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+.login-box button {
+  border-radius: 10px;
+  height: 4%;
+  text-align: center;
+  color: white;
+  background-color: #666666;
+}
+
+.login-sign button {
+  background-color: #4e8ae9;
+  color: white;
+  border: 1px solid #ccc;
+  font-size: 0.9em;
 }
