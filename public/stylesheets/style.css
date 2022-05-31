@@ -69,8 +69,6 @@ nav li a {
   line-height: 01.5em;
 }
 
-.login-form {
-}
 
 .login-form-header {
   padding: 0.45em;
@@ -109,7 +107,11 @@ input, .login-box button {
 
 .login-sign button {
   background-color: #4e8ae9;
-  color: white;
   border: 1px solid #ccc;
   font-size: 0.9em;
+}
+
+.login-sign button a {
+  text-decoration: none;
+  color: white;
 }
