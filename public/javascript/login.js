@@ -1,33 +1,28 @@
-function signupFormHandler(event) {
+async function loginFormHandler(event) {
   event.preventDefault();
-  console.log("astro");
 
-  const username = document.querySelector("#username-signup").value.trim();
-  const password = document.querySelector("#password-signup").value.trim();
+  const username = document.querySelector("#username-login").value.trim();
+  const password = document.querySelector("#password-login").value.trim();
 
   if (username && password) {
-    fetch("/api/users", {
+    const response = await fetch("/api/users/login", {
       method: "post",
       body: JSON.stringify({
         username,
         password,
       }),
       headers: { "Content-Type": "application/json" },
-    }).then((response) => {
-      console.log(response);
     });
+
+    if (response.ok) {
+      console.log("good")
+      document.location.replace("/");
+    } else {
+      console.log("nope")
+      alert(response.statusText);
+    }
   }
 }
-
-function loginFormHandler(event) {
-  event.preventDefault()
-  console.log("nope")
-
-}
-
-document
-  .querySelector("#signup-form")
-  .addEventListener("submit", signupFormHandler);
 
 document
   .querySelector(".login-form")
