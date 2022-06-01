@@ -69,7 +69,6 @@ nav li a {
   line-height: 01.5em;
 }
 
-
 .login-form-header {
   padding: 0.45em;
   font-weight: 800;
@@ -77,18 +76,20 @@ nav li a {
 }
 
 .login-writting,
-.login-box, .login-sign {
+.login-box,
+.login-sign {
   margin-left: 30px;
   margin-bottom: 8px;
   margin-top: 8px;
   font-size: 1.5rem;
 }
 
-.login-title{
+.login-title {
   margin-bottom: 10px;
 }
 
-input, .login-box button {
+input,
+.login-box button {
   width: 96%;
   padding: 12px;
   border: 1px solid #ccc;
@@ -114,4 +115,13 @@ input, .login-box button {
 .login-sign button a {
   text-decoration: none;
   color: white;
+}
+
+.btn-no-style {
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  background-color: #231010;
+  color: #d9ead3;
+  font-size: 1.4em;
 }
