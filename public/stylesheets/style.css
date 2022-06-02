@@ -55,7 +55,7 @@ nav li a {
 }
 
 .title-header,
-.login-form-header {
+.login-form-header, .section-form-header {
   background-color: #231010;
   color: #d9ead3;
   padding-left: 1.8rem;
@@ -144,11 +144,23 @@ input,
   font-size: 1.4em;
 }
 
-.empty-background-color{
+.empty-background-color, .new-post-button{
   background-color: #231010;
   height: 1.9em;
 }
 
 .comment{
   text-align: center;
+}
+
+.section-form-header {
+  padding: 10px;
+  margin-top: 0;
+}
+
+.new-post-button {
+  color: white;
+  padding: 15;
+  font-size: 1.5em;
+  border-radius: 8px;
 }
