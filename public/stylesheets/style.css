@@ -47,7 +47,8 @@ nav li a {
 }
 
 .title-box,
-.login-form {
+.login-form,
+.comment-form, .comment {
   margin: 35px;
   border: 2px solid #231010;
   padding-bottom: 40px;
@@ -77,6 +78,7 @@ nav li a {
 
 .login-writting,
 .login-box,
+.comment-button,
 .login-sign {
   margin-left: 30px;
   margin-bottom: 8px;
@@ -89,7 +91,8 @@ nav li a {
 }
 
 input,
-.login-box button {
+.login-box button,
+.comment-button button {
   width: 96%;
   padding: 12px;
   border: 1px solid #ccc;
@@ -98,7 +101,22 @@ input,
   resize: vertical;
 }
 
-.login-box button {
+
+.textinput {
+  text-align: center;
+  width: 90%;
+  min-height: 75px;
+  outline: none;
+  resize: none;
+  border: 1px solid grey;
+  padding: 30px 0;
+  margin-left: 40px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.login-box button,
+.comment-button button {
   border-radius: 10px;
   height: 4%;
   text-align: center;
@@ -124,4 +142,13 @@ input,
   background-color: #231010;
   color: #d9ead3;
   font-size: 1.4em;
+}
+
+.empty-background-color{
+  background-color: #231010;
+  height: 1.9em;
+}
+
+.comment{
+  text-align: center;
 }

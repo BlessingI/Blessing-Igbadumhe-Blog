@@ -1,0 +1,40 @@
+<div class="title-box">
+
+  <div class="title-header">
+    <h3><a href="/post/{{post.id}}">{{post.title}}</a></h3>
+    <span> <i>posted by {{post.user.username}} on {{post.created_at}}</i></span>
+
+  </div>
+  <div class="title-body">
+    {{post.post_url}}
+  </div>
+
+</div>
+
+<form class="comment-form">
+  <div class="login-form-header">Comments</div>
+
+  <div>
+    <textarea class="textinput" name="comment-body"></textarea>
+  </div>
+
+  <div class="comment-button">
+    <button type="submit">submit</button>
+  </div>
+</form>
+
+<div class="comments">
+   {{#each post.comments as |comment|}}
+    <section class="comment">
+      <div class="meta">
+        {{user.username}}
+        on
+        {{created_at}}
+      </div>
+      <div class="text">
+        {{comment_text}}
+      </div>
+    </section>
+  {{/each}}
+</div>
+<script src="/javascript/comment.js"></script>
