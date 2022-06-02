@@ -1,5 +1,6 @@
 const router = require("express").Router();
 const { Post, User, Comment, Vote } = require("../../models");
+const withAuth = require("../../utils/auth");
 const sequelize = require("../../config/connection");
 
 // get all users
@@ -78,11 +79,11 @@ router.get("/:id", (req, res) => {
     });
 });
 
-router.post("/", (req, res) => {
+router.post("/", withAuth, (req, res) => {
   Post.create({
     post_url: req.body.post_url,
     title: req.body.title,
-    user_id: req.body.user_id,
+    user_id: req.session.user_id,
   })
     .then((dbUserData) => res.json(dbUserData))
     .catch((err) => {
@@ -92,7 +93,7 @@ router.post("/", (req, res) => {
 });
 
 // PUT /api/posts/upvote
-router.put("/upvote", (req, res) => {
+router.put("/upvote", withAuth, (req, res) => {
   // create the vote
   Post.upvote(req.body, { Vote })
     .then((updatedPostData) => res.json(updatedPostData))
@@ -102,7 +103,7 @@ router.put("/upvote", (req, res) => {
     });
 });
 
-router.put("/:id", (req, res) => {
+router.put("/:id", withAuth, (req, res) => {
   Post.update(
     {
       title: req.body.title,
@@ -126,7 +127,7 @@ router.put("/:id", (req, res) => {
     });
 });
 
-router.delete("/:id", (req, res) => {
+router.delete("/:id", withAuth, (req, res) => {
   Post.destroy({
     where: {
       id: req.params.id,
