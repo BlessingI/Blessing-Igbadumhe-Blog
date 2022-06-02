@@ -4,7 +4,7 @@ const sequelize = require("./config/connection");
 //make stylesheet available to client
 const path = require("path");
 const session = require('express-session');
-
+const helpers = require('./utils/helpers');
 const SequelizeStore = require('connect-session-sequelize')(session.Store);
 
 const sess = {
@@ -27,7 +27,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(routes);
 
 const exphbs = require("express-handlebars");
-const hbs = exphbs.create({});
+const hbs = exphbs.create({ helpers });
 
 app.engine("handlebars", hbs.engine);
 app.set("view engine", "handlebars");
