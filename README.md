@@ -4,7 +4,7 @@
 This is a basic CMS-style Tech blog. You are presented with a homepage that shows all the current posts. A nav bar at the top gives you the option of going to the homepage, dashboard or login. 
 
 ## Usage
-App can be viewed at 
+App can be viewed at https://blessing-igbadumhe-blog.herokuapp.com/
 
 ## User Story
     AS A developer who writes about tech
@@ -47,11 +47,11 @@ App can be viewed at
     THEN I am able to view comments but I am prompted to log in again before I can add, update, or delete comments
 
 ## Technologies
-Javascript
-MYSQL
-Insomnia
-Heroku
-Node.js
+* `Javascript` 
+* `MYSQL`
+* `Insomnia`
+* `Heroku`
+* `Node.js` 
 
 The following npm packages
 * `express.js` 
