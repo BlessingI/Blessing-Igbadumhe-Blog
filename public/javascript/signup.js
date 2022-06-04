@@ -15,8 +15,10 @@ async function signupFormHandler(event) {
     });
 
     if (response.ok) {
+      console.log(response , "hey")
       document.location.replace("/dashboard/");
     } else {
+      console.log(response, "hello")
       alert(response.statusText);
     }
   }
