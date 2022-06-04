@@ -15,7 +15,6 @@ async function loginFormHandler(event) {
     });
 
     if (response.ok) {
-      console.log("good")
       document.location.replace("/dashboard");
     } else {
       console.log("nope")
