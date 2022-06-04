@@ -48,14 +48,16 @@ nav li a {
 
 .title-box,
 .login-form,
-.comment-form, .comment {
+.comment-form,
+.comment {
   margin: 35px;
   border: 2px solid #231010;
   padding-bottom: 40px;
 }
 
 .title-header,
-.login-form-header, .section-form-header {
+.login-form-header,
+.section-form-header {
   background-color: #231010;
   color: #d9ead3;
   padding-left: 1.8rem;
@@ -101,7 +103,6 @@ input,
   resize: vertical;
 }
 
-
 .textinput {
   text-align: center;
   width: 90%;
@@ -144,12 +145,13 @@ input,
   font-size: 1.4em;
 }
 
-.empty-background-color, .new-post-button{
+.empty-background-color,
+.new-post-button {
   background-color: #231010;
   height: 1.9em;
 }
 
-.comment{
+.comment {
   text-align: center;
 }
 
@@ -163,4 +165,9 @@ input,
   padding: 15;
   font-size: 1.5em;
   border-radius: 8px;
+  margin: auto;
+}
+
+.container-box {
+  display: grid;
 }
