@@ -64,3 +64,18 @@ The following npm packages
 
 ## Repo
 https://github.com/BlessingI/Blessing-Igbadumhe-Blog.git
+
+## Application Pictures
+![BlessingBlogPic](./public/images/blessingblog5.png)
+<br />
+<br />
+![BlessingBlogPic](./public/images/Blessingblogpic1.png)
+<br />
+<br />
+![BlessingBlogPic](./public/images/Blessingblogpic2.png)
+<br />
+<br />
+![BlessingBlogPic](./public/images/blessingblog3.png)
+<br />
+<br />
+![BlessingBlogPic](./public/images/blessingblog4.png)
