@@ -72,7 +72,7 @@ https://github.com/BlessingI/Blessing-Igbadumhe-Blog.git
 ![BlessingBlogPic](./public/images/Blessingblogpic1.png)
 <br />
 <br />
-![BlessingBlogPic](./public/images/Blessingblogpic2.png)
+![BlessingBlogPic](./public/images/Bemma.png)
 <br />
 <br />
 ![BlessingBlogPic](./public/images/blessingblog3.png)
