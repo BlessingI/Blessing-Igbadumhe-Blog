@@ -99,7 +99,7 @@ a {
 
 input,
 .login-box button,
-.comment-button button {
+.comment-button button, .btn {
   width: 96%;
   padding: 12px;
   border: 1px solid #ccc;
@@ -122,7 +122,7 @@ input,
 }
 
 .login-box button,
-.comment-button button {
+.comment-button button, .btn {
   border-radius: 10px;
   height: 4%;
   text-align: center;
@@ -175,4 +175,8 @@ input,
 
 .container-box {
   display: grid;
+}
+
+.btn {
+  margin-top: 20px;
 }
