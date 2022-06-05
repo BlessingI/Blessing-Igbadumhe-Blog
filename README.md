@@ -66,16 +66,22 @@ The following npm packages
 https://github.com/BlessingI/Blessing-Igbadumhe-Blog.git
 
 ## Application Pictures
-![BlessingBlogPic](./public/images/blessingblog5.png)
+![BlessingBlogPic](./public/images/blog1.png)
 <br />
 <br />
-![BlessingBlogPic](./public/images/Blessingblogpic1.png)
+![BlessingBlogPic](./public/images/blog2.png)
 <br />
 <br />
-![BlessingBlogPic](./public/images/Bemma.png)
+![BlessingBlogPic](./public/images/blog3.png)
 <br />
 <br />
-![BlessingBlogPic](./public/images/blessingblog3.png)
+![BlessingBlogPic](./public/images/blog4.png)
 <br />
 <br />
-![BlessingBlogPic](./public/images/blessingblog4.png)
+![BlessingBlogPic](./public/images/blog5.png)
+<br />
+<br />
+![BlessingBlogPic](./public/images/blog6.png)
+<br />
+<br />
+![BlessingBlogPic](./public/images/blog7.png)
